@@ -8,8 +8,6 @@ html {
           box-sizing: border-box;
   
   font: 16px/1em "DM Sans";
-  -webkit-transition: all .9s;
-  transition: all .9s;
 }
 
 *,
@@ -49,8 +47,8 @@ main {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flow-root;
-  -webkit-transition: all .6s;
   transition: all .6s;
+  transition-property: background, color;
 }
 
 @media screen and (max-width: 40rem) {

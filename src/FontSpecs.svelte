@@ -13,5 +13,7 @@
 	&emsp;'lineheightMinusXheightRatio': {$params.lineheightMinusXheightRatio}, <br />
 	&emsp;'leftShiftRatio': {$params.leftShiftRatio}, <br />
 	&emsp;'letterSpacingRatio': {$params.letterSpacingRatio} <br />
-);
+	);
 </div>
+
+

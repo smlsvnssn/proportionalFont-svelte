@@ -4,6 +4,7 @@
 	import { params } from "./params.js";
 	import { onMount } from 'svelte';
 	import Awesomplete from 'awesomplete-es6';
+	import { webfontsKey } from 'secrets.js'
 
 	const 
 		load = async url => { 
@@ -29,7 +30,7 @@
 	}
 
 	onMount(async () => {
-		fonts = await load('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAaL4S4UU9z6Spn0ENzGnD99OAyL2vI3Qc');
+		fonts = await load(`https://www.googleapis.com/webfonts/v1/webfonts?key=${ webfontsKey }`);
 		fontNames = fonts.items?.map(f => f.family);
 		new Awesomplete(
 			fontField, { 

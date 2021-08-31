@@ -20,8 +20,7 @@
 	<span class="debug">
 		<h5 contenteditable="true">Extra! Examen i exotisk exorcism exemplifierar extremistisk exkommunikation</h5>
 	</span>
-	{@html löremIpsum(3, 6, 8, 
-		{ 
+	{@html löremIpsum(3, 6, 8, { 
 			useLörem: false, 
 			isHeadline: false, 
 			paragraphStartWrap: '<span class="debug"><p>', 
