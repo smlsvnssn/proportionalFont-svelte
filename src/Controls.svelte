@@ -12,7 +12,7 @@
 				const response = await fetch(url); 
 				return await response.json();
 			} catch (e) { console.error(e) }
-		}, code ./
+		},
 
 		loadFont = (font, url) => {
 			const f = new FontFace(font, `url(${url.replace("http:", "https:")})`);
