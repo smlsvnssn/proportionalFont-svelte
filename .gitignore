@@ -1,4 +1,3 @@
 /node_modules/
 /public/build/
-# /src/secrets.js
 .DS_Store
