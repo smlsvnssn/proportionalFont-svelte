@@ -1,1 +1,1 @@
-export const webfontsKey = 'webfontsKey';
+export const webfontsKey = 'AIzaSyAaL4S4UU9z6Spn0ENzGnD99OAyL2vI3Qc';
