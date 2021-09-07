@@ -4,9 +4,10 @@
 	import { params } from "./params.js";
 	import { onMount } from 'svelte';
 	import Awesomplete from 'awesomplete-es6';
-	import { webfontsKey } from 'secrets.js'
 
 	const 
+		webfontsKey = 'AIzaSyAaL4S4UU9z6Spn0ENzGnD99OAyL2vI3Qc',
+
 		load = async url => { 
 			try {
 				const response = await fetch(url); 
