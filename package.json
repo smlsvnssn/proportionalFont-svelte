@@ -19,6 +19,10 @@
   },
   "dependencies": {
     "awesomplete-es6": "^1.2.2",
-    "sirv-cli": "^1.0.0"
+    "flubber": "^0.4.2",
+    "loerem": "^1.0.0",
+    "polymorph-js": "^1.0.2",
+    "sirv-cli": "^1.0.0",
+    "snapsvg": "^0.5.1"
   }
 }

@@ -1,19 +1,12 @@
 <script>
 	import Slider from "./parts/Slider.svelte";
 	import Switch from "./parts/Switch.svelte";
-	import { params } from "./params.js";
+	import { params } from "./params";
 	import { onMount } from 'svelte';
 	import Awesomplete from 'awesomplete-es6';
-
+	import { load } from './ö';
 	const 
 		webfontsKey = 'AIzaSyAaL4S4UU9z6Spn0ENzGnD99OAyL2vI3Qc',
-
-		load = async url => { 
-			try {
-				const response = await fetch(url); 
-				return await response.json();
-			} catch (e) { console.error(e) }
-		},
 
 		loadFont = (font, url) => {
 			const f = new FontFace(font, `url(${url.replace("http:", "https:")})`);

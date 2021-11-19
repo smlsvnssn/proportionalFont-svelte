@@ -1,5 +1,5 @@
 <script>
-	import { params } from "./params.js";
+	import { params } from "./params";
 
 	const toCamelCase = s => s.replace(/([-_\s])([a-zA-Z0-9])/g, (m, _, c, o) => o ? c.toUpperCase(): c);
 

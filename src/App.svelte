@@ -1,12 +1,15 @@
 <script>
-	import Controls from "./Controls.svelte";
-	import Details from "./Details.svelte";	
-	import FontSpecs from "./FontSpecs.svelte";	
-	import DummyContent from "./DummyContent.svelte";	
-	import { params } from "./params.js";
+	import Controls from './Controls.svelte';
+	import Details from './Details.svelte';
+	import FontSpecs from './FontSpecs.svelte';
+	import DummyContent from './DummyContent.svelte';
+	import { params } from './params';
+
+	let active = false;
 </script>
 
-<main style='
+<main
+	style="
 	--font: {$params.font};
 	--topToXheightRatio: {$params.topToXheightRatio};
 	--lineheightMinusXheightRatio: {$params.lineheightMinusXheightRatio};
@@ -16,11 +19,12 @@
 	--padding: {$params.padding ? 1 : 0};
 	--bg:  {$params.invert ? '#333' : '#fff'};
 	--clr: {$params.invert ? '#fff' : '#333'};
-'>
+"
+>
 	<nav class="settings">
-		<Details/>
-		<Controls/>
-		<FontSpecs/>
+		<Details />
+		<Controls />
+		<FontSpecs />
 	</nav>
-	<DummyContent/>
+	<DummyContent />
 </main>
